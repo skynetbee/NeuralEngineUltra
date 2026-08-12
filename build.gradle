@@ -1,2 +1,12 @@
-configurations.maybeCreate("default")
-artifacts.add("default", file("production-release-v1.aar"))
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        Release(MavenPublication) {
+            groupId = 'com.github.skynetbee'
+            artifactId = 'NeuralEngineUltra'
+            version = '1.0.1'
+            artifact("production-release-v1.aar")
+        }
+    }
+}
