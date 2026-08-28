@@ -8,8 +8,8 @@ publishing {
         Release(MavenPublication) {
             groupId = 'com.github.skynetbee'
             artifactId = 'NeuralEngineUltra'
-            version = '2.0.0'
-            artifact("production-release-v1.aar")
+            version = '2.0.1'
+            artifact("production-release-v2.aar")
         }
     }
 }
