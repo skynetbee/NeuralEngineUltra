@@ -216,7 +216,6 @@ val myDatabaseSchema = listOf(
 
 setContent {
     Background3()
-    // sqlUsageTestForChitFund()
     val myNavController = rememberNavController()
     Navigation(showGoogleSignIn = true) {
         composable("home_screen") {
